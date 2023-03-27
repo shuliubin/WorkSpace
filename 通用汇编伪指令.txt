@@ -1,0 +1,13 @@
+.type name,@type:将符号name的type属性设为type。其中type可以是function或object
+.globl == kernel export 全局可以使用
+.INCBIN 文件名
+INCBIN伪指令用于将一个目标文件或数据文件包含到当前的源文件中，被包含的文件不作任何变动的存放在当前文件中，编译器从其后开始继续处理
+.LTORG //定义数据缓冲池
+data SPACE 4200 //从当前开始分配40字节的内存单元并初始化为0
+
+.type initrd_start,#object
+.globl initrd_start
+initrd_start:
+.incbin INITRD
+.globl initrd_end
+initrd_end:
