@@ -1,1 +1,3 @@
 伪指令 .option    http://www.rowleydownload.co.uk/arm/documentation/gnu/as/RISC_002dV_002dDirectives.html#RISC_002dV_002dDirectives
+
+汇编指令          https://zhuanlan.zhihu.com/p/540887151?utm_id=0
